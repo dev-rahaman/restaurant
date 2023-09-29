@@ -1,11 +1,5 @@
-import React, { useEffect } from "react";
-
-import Aos from "aos";
+/* eslint-disable @next/next/no-img-element */
 const ReservationCover = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   return (
     <div className="overflow-hidden reservation-cover relative w-full">
       <div className="h-full bg-zinc-950/20 px-5 md:px-0 text-white overflow-hidden">
@@ -13,7 +7,6 @@ const ReservationCover = () => {
           <h3 className="light-font block text-lg leading-4 tracking-widest ">
             MORE FLAVOR FOR LESS
           </h3>
-
           <h1
             className="md:text-[90px]  text-6xl font-bold mb-5"
             data-aos="fade-up"

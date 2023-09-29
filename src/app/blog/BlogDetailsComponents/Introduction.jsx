@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Heading from "./Heading";
 import MessageBox from "./MessageBox";
 

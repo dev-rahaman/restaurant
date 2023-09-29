@@ -1,5 +1,5 @@
-// import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
-// import { BsInstagram, BsTwitter } from "react-icons/bs";
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import { FaFacebook } from "react-icons/fa6";
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
         us elit aboris nisi.
       </p>
       <div className="flex justify-start items-center gap-3">
-        <a
+        <Link
           href="#"
           className="p-2 bg-[#3b5999] text-white hover:bg-darkBg duration-300 group"
         >
@@ -21,8 +21,8 @@ const About = () => {
             size={20}
             className="bg-[#3b5999] group-hover:bg-darkBg duration-300"
           />
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="p-2 bg-[#55acee] text-white hover:bg-darkBg duration-300 group"
         >
@@ -30,8 +30,8 @@ const About = () => {
             size={20}
             className="bg-[#55acee] group-hover:bg-darkBg duration-300"
           />
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="p-2 bg-[#e4405f] text-white hover:bg-darkBg duration-300 group"
         >
@@ -39,8 +39,8 @@ const About = () => {
             size={20}
             className="bg-[#e4405f] group-hover:bg-darkBg duration-300"
           />
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="p-2 bg-[#0077B5] text-white hover:bg-darkBg duration-300 group"
         >
@@ -48,7 +48,7 @@ const About = () => {
             size={20}
             className="bg-[#0077B5] group-hover:bg-darkBg duration-300"
           />
-        </a>
+        </Link>
       </div>
     </section>
   );

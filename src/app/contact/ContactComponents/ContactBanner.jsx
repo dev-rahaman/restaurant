@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const ContactBanner = () => {
   return (
     <>
@@ -27,6 +28,7 @@ const ContactBanner = () => {
               your meat. No one can compete with our meat
             </p>
           </div>
+          
           {/* left corner image */}
           <div className="absolute -bottom-10 z-50 -left-[91px] hidden md:block ">
             <img
@@ -35,12 +37,13 @@ const ContactBanner = () => {
               className="w-[400px]"
             />
           </div>
+
           {/* right corner image */}
           <div className="absolute -right-16 z-50 -bottom-48  hidden md:block">
             <img
               src={"/contact-right-cover.png"}
               alt=""
-              className="w-[400px]"
+              className="w-[300px]"
             />
           </div>
         </div>

@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect } from "react";
-
 import Aos from "aos";
+
 const ReservationShowCase = () => {
   useEffect(() => {
     Aos.init();

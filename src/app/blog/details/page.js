@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "./BlogDetailsComponents/Banner";
-import Introduction from "./BlogDetailsComponents/Introduction";
-import RightPart from "./BlogDetailsComponents/RightPart";
-import Container from "./BlogDetailsComponents/Container";
+import Banner from "../BlogDetailsComponents/Banner";
+import Introduction from "../BlogDetailsComponents/Introduction";
+import RightPart from "../BlogDetailsComponents/RightPart";
+import Container from "../BlogDetailsComponents/Container";
 
 const BlogsDetails = () => {
   return (

@@ -1,5 +1,19 @@
 import { Button } from "@/app/components/CommonComponents";
-import React from "react";
+
+export const InputText = ({ labelName }) => {
+  return (
+    <div className="pb-4">
+      <label className="text-md font-semibold" htmlFor={labelName}>
+        {labelName}
+      </label>
+      <input
+        type="text"
+        name={labelName}
+        className="form-input px-5 py-4 w-full rounded-lg border-2 border-white bg-transparent"
+      />
+    </div>
+  );
+};
 
 const ContactForm = () => {
   return (
@@ -19,26 +33,9 @@ const ContactForm = () => {
         </div>
         <div className="lg:w-1/2 w-full lg:px-10 py-5">
           <form>
-            <div className="pb-4">
-              <label className="text-md font-semibold" htmlFor="name">
-                Your name
-              </label>
-              <input
-                type="text"
-                name="name"
-                className="form-input px-5 py-4 w-full rounded-lg border-2 border-white bg-transparent"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="text-md  font-semibold" htmlFor="email">
-                Your email
-              </label>
-              <input
-                type="email"
-                name="email"
-                className="form-input px-5 py-4 w-full rounded-lg border-2 border-white bg-transparent"
-              />
-            </div>
+            <InputText labelName={"name"} />
+            <InputText labelName={"email"} />
+
             <div className="pb-3">
               <label className="text-md  font-semibold" htmlFor="message">
                 Your message (optional)

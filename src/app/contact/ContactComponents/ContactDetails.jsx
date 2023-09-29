@@ -1,18 +1,10 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-
 const ContactDetails = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div
       data-aos="fade-up"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
-      className="bg-black text-neutral-content py-28 px-10"
+      className="text-neutral-content py-28 px-10"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:px-10 pb-2">
         <div>
@@ -40,7 +32,6 @@ const ContactDetails = () => {
 
         <div>
           <h2 className="lg:text-3xl font-bold pb-3">Opening Hours</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
               <h2 className="text-2xl font-semibold pb-2">Lunch Time</h2>

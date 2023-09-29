@@ -13,6 +13,12 @@ const posts = [
     date: "April 19, 2022",
     border: false,
   },
+  {
+    title: "Things To Know When Choosing Foods",
+    img: "https://elementor.zozothemes.com/restaurt/wp-content/uploads/sites/58/2022/04/blog-img-80x80.jpg",
+    date: "April 19, 2022",
+    border: true,
+  },
 ];
 
 const LatestPosts = () => {

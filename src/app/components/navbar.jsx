@@ -6,6 +6,34 @@ import { RxCross1 } from "react-icons/rx";
 import { FaInstagram, FaTripadvisor } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+
+const navbar = [
+  {
+    link: "/",
+    text: "Home",
+  },
+  {
+    link: "/about",
+    text: "About",
+  },
+  {
+    link: "/ourmenu",
+    text: "Our Menu",
+  },
+  {
+    link: "/reservation",
+    text: "Reservation",
+  },
+  {
+    link: "/blog/details",
+    text: "Blogs",
+  },
+  {
+    link: "/contact",
+    text: "Contact",
+  },
+];
+
 const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +45,7 @@ const Navbar = () => {
       setIsScrolling(false);
     }
   };
+
   window.addEventListener("scroll", handleScroll);
 
   const handleMenu = () => {
@@ -42,14 +71,15 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden  md:flex justify-center items-center  gap-8 font-semibold text-base">
-          <a>Home</a>
-          <a>About</a>
-          <a>Our Menus</a>
-          <Link href={""} className="text-[#CA9C5E]">
-            Reservation
-          </Link>
-          <a>Contact</a>
+          {navbar.map((item) => (
+            <>
+              <Link href={`${item.link}`} className="block">
+                {item.text}
+              </Link>
+            </>
+          ))}
         </div>
+
         {/* responsive menu for small device */}
         <div
           className={`  ${
@@ -61,23 +91,15 @@ const Navbar = () => {
               className="absolute right-10 top-10 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
-              <RxCross1 size={24}></RxCross1>{" "}
+              <RxCross1 size={24}></RxCross1>
             </p>
-            <Link href={"/"} className="block">
-              Home
-            </Link>
-            <Link href={""} className="block">
-              About
-            </Link>
-            <Link href={""} className="block">
-              Our Menus
-            </Link>
-            <Link href={""} className="text-[#CA9C5E] block">
-              Reservation
-            </Link>
-            <Link href={""} className="block">
-              Contact
-            </Link>
+            {navbar.map((item) => (
+              <>
+                <Link href={`${item.link}`} className="block">
+                  {item.text}
+                </Link>
+              </>
+            ))}
             <button className="mt-20 bg-transparent border border-white font-bold px-20 py-4">
               Reservation
             </button>

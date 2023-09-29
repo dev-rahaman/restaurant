@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import { BsFolder2 } from "react-icons/bs";
 import { CiClock2 } from "react-icons/ci";
 
@@ -14,21 +16,21 @@ const Heading = () => {
             alt="man"
             className="w-5 h-5 object-cover object-center rounded-full"
           />
-          <a href="#" className="menu-link text-muted text-[15px]">
+          <Link href="#" className="menu-link text-muted text-[15px]">
             Restont
-          </a>
+          </Link>
         </div>
         <div className="flex justify-start items-center gap-3">
           <CiClock2 size={20} className="text-[#c59d5f]" />
-          <a href="#" className="menu-link text-muted text-[15px]">
+          <Link href="#" className="menu-link text-muted text-[15px]">
             April 19, 2022
-          </a>
+          </Link>
         </div>
         <div className="flex justify-start items-center gap-3">
           <BsFolder2 size={20} className="text-[#c59d5f]" />
-          <a href="#" className="menu-link text-muted text-[15px]">
+          <Link href="#" className="menu-link text-muted text-[15px]">
             Daily Menu
-          </a>
+          </Link>
         </div>
       </div>
     </section>
