@@ -9,7 +9,7 @@ const ReservationShowCase = () => {
 
   return (
     <div className="w-full">
-      <div className="text-white  text-center md:my-24 my-14 px-5 md:px-0">
+      <div className="text-white text-center md:my-24 my-14 px-5 md:px-0">
         <h2
           data-aos="fade-up"
           data-aos-easing="ease-out-cubic"

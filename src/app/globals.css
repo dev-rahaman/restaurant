@@ -85,3 +85,249 @@ body {
   color: #ca9c5e;
   transition: color 0.3s ease;
 }
+
+/* .tag {
+  @apply px-5 py-[6px] text-[15px] text-muted hover:text-white bg-[#2c3238] hover:bg-btnBg duration-300;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #c49f66;
+  color: white;
+}
+
+body {
+  background-color: #0e1317;
+}
+
+.font-Nunito {
+  font-family: "Nunito Sans";
+}
+
+.font-Themify {
+  font-family: "themify";
+}
+
+/* Banner menu link styles ---------------Start---------------- */
+
+.menu-link {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu-link::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin: 0 12px 0 17px;
+  transform: rotate(45deg);
+  background: #c49f66;
+  display: inline-block;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-link:hover {
+  color: #c49f66;
+}
+
+.menu-link:hover::after {
+  transform: rotate(135deg);
+}
+
+/* Banner menu link styles ---------------End---------------- */
+
+/* Quote styles ---------------Start---------------- */
+.quote {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.quote::before {
+  content: "\e67f";
+  font-family: "themify";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  font-size: 27px;
+  top: 0;
+  color: #fff;
+  background: #c59d5f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-author {
+  font-size: 16px;
+  color: #c59d5f;
+  padding-left: 29px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.quote-author::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #c59d5f;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+/* Quote styles ---------------End---------------- */
+
+.colorSpicy {
+  font-family: Themify;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 200;
+  padding-left: 60px;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.colorSpicy::before {
+  content: "\e629";
+  font-size: 16px;
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c59d5f;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  transition: 0.3s ease;
+}
+
+.colorSpicyContainer::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 45px;
+  background: #ababab46;
+  right: 0;
+  top: 10px;
+}
+
+.colorSpicyContainer:hover .colorSpicy::before {
+  background-color: #ababab46;
+  color: white;
+}
+
+/* ----------- Bottom color for the inputs and the textarea --------- */
+.bottom,
+.textareaBottom {
+  position: relative;
+}
+
+.bottom::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 1px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #c49f66, rgb(58 123 213 / 0%));
+  border-image-slice: 1;
+  z-index: 10;
+}
+.textareaBottom::before {
+  content: "";
+  bottom: 6px;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 1px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #c49f66, rgb(58 123 213 / 0%));
+  border-image-slice: 1;
+  z-index: 10;
+}
+
+.input:focus + .bottom::before {
+  width: 100%;
+}
+
+textarea:focus + .textareaBottom::before {
+  width: 100%;
+}
+
+/* ---- End------- Bottom color for the inputs and the textarea -----End---- */
+
+/* Footer Background Images */
+
+.footer {
+  background-image: url("/footer-bg.png"), url("/footer-bg-2.png");
+  background-size: auto 400px, cover;
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+.footer-top {
+  background-image: url("/footer-bg-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Footer menu styles --------------------Start------------------- */
+
+.footer-menu {
+  position: relative;
+  color: #ababab;
+  padding-left: 20px;
+  transition: 0.4s ease;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer-menu:hover {
+  color: white;
+}
+
+.footer-menu::before {
+  content: "";
+  vertical-align: middle;
+  font-size: 12px;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0;
+  transition: all 250ms ease-in-out 0s;
+  background: #c49f6680;
+  display: inline-block;
+  top: 50%;
+}
+.footer-menu:hover::before {
+  transform: rotate(135deg);
+  background: #c59d5f;
+}
+
+.bg-lightBg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 32 / var(--tw-bg-opacity));
+}
+
+.bg-darkBg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 12 14 / var(--tw-bg-opacity));
+}
