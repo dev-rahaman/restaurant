@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 const ReservationCover = () => {
   return (
     <div className="overflow-hidden reservation-cover relative w-full">

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect } from "react";
 import Aos from "aos";
@@ -57,26 +55,32 @@ const ReservationShowCase = () => {
       >
         <img
           src={"/archive-img-1.jpg"}
+          alt=""
           className="h-[345px] rounded-md w-full md:col-span-3"
         />
         <img
           src={"archive-img-2.jpg"}
+          alt=""
           className="h-[345px] rounded-md w-full md:col-span-4"
         />
         <img
           src={"/archive-img-3.jpg"}
+          alt=""
           className="h-[345px] rounded-md w-full md:col-span-2"
         />
         <img
           src={"/archive-img-4.jpg"}
+          alt=""
           className="h-[345px] rounded-md w-full md:col-span-4"
         />
         <img
           src={"/archive-img-5.jpg"}
+          alt=""
           className="h-[345px] rounded-md w-full md:col-span-2"
         />
         <img
           src={"/archive-img-6.jpg"}
+          alt=""
           className="h-[345px] rounded-md w-full md:col-span-3"
         />
       </div>

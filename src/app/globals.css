@@ -86,9 +86,9 @@ body {
   transition: color 0.3s ease;
 }
 
-/* .tag {
+.tag {
   @apply px-5 py-[6px] text-[15px] text-muted hover:text-white bg-[#2c3238] hover:bg-btnBg duration-300;
-} */
+}
 
 * {
   padding: 0;
@@ -330,4 +330,14 @@ textarea:focus + .textareaBottom::before {
 .bg-darkBg {
   --tw-bg-opacity: 1;
   background-color: rgb(8 12 14 / var(--tw-bg-opacity));
+}
+
+.text-muted {
+  --tw-text-opacity: 1;
+  color: rgb(171 171 171 / var(--tw-text-opacity));
+}
+
+.hover\:bg-btnBg:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 157 95 / var(--tw-bg-opacity));
 }

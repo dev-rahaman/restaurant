@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Heading from "./Heading";
 import MessageBox from "./MessageBox";
 
@@ -59,7 +58,9 @@ const Introduction = () => {
       <section className="flex flex-col md:flex-row justify-between items-center w-full gap-5">
         <div className="w-full md:w-1/2 relative group cursor-pointer">
           <img
-            src={"/image-1.jpg"}
+            src={
+              "https://fantastic-lebkuchen-d5cbd1.netlify.app/assets/img-2-d31a4da5.jpg"
+            }
             alt=""
             className="w-full object-cover h-full "
           />
@@ -67,7 +68,9 @@ const Introduction = () => {
         </div>
         <div className="w-full md:w-1/2 relative group cursor-pointer">
           <img
-            src={"/image-1.jpg"}
+            src={
+              "	https://fantastic-lebkuchen-d5cbd1.netlify.app/assets/img-3-97f82026.jpg"
+            }
             alt=""
             className="w-full object-cover h-full"
           />

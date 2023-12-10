@@ -1,11 +1,11 @@
 import Banner from "@/app/Allcomponents/Banner";
 
-const ContactBanner = () => {
+const AboutBanner = () => {
   return (
     <>
       <Banner
         title={"MORE FLAVOR FOR LESS"}
-        heading={"Contact"}
+        heading={"About"}
         para={
           "When the going gets tough, the tough get grilling. Bringing heat to your meat. No one can compete with our meat"
         }
@@ -16,4 +16,4 @@ const ContactBanner = () => {
   );
 };
 
-export default ContactBanner;
+export default AboutBanner;
