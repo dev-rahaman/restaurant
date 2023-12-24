@@ -1,4 +1,4 @@
-import { AOSComponent } from "@/app/Components/Functions/funciton.";
+import { AOSComponent } from "@/app/Components/Functions/function";
 
 const ReservationCover = () => {
   <AOSComponent />;

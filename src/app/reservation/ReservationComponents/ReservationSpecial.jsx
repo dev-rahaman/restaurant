@@ -1,12 +1,7 @@
-"use client";
-import Aos from "aos";
-import { useEffect } from "react";
+import { AOSComponent } from "@/app/Components/Functions/function";
 
 const ReservationSpecial = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
+  <AOSComponent />;
   return (
     <div className="flex px-5 md:px-0 md:flex-row flex-col text-white mt-24 md:max-w-6xl w-full mx-auto">
       <div className="md:w-[40%] mb-8 md:mb-0 rounded-md md:rounded-none">

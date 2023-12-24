@@ -1,6 +1,6 @@
 const ReservationBanner = () => {
   return (
-    <div className="flex items-center justify-center flex-col mt-24 reservationBanner h-[444px]">
+    <div className="reservationBannerTwo flex items-center justify-center flex-col mt-24  h-[444px]">
       <h3
         className="md:text-[90px]  text-6xl font-bold mb-5 text-white"
         data-aos="fade-up"

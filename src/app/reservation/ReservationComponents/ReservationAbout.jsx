@@ -1,14 +1,9 @@
-"use client";
-import React, { useEffect } from "react";
-import Aos from "aos";
+import { AOSComponent } from "@/app/Components/Functions/function";
 
 const ReservationAbout = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
+  <AOSComponent />;
   return (
-    <div className="about-container mt-24 md:relative ">
+    <div className="reservationBannerThree mt-24 md:relative ">
       <div className="bg-zinc-950/30 w-full h-full px-5 flex justify-center items-center">
         <div className="md:max-w-6xl w-full mx-auto text-white ">
           <div className="md:w-[500px] w-full">

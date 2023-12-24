@@ -1,13 +1,14 @@
-const AboutBannerDetails = ({
+const CoverBackground = ({
   title,
   heading,
   para,
   leftCornerImage,
   rightCornerImage,
+  background,
 }) => {
   return (
     <>
-      <div className="overflow-hidden contact-cover relative w-full">
+      <div className={`${background} overflow-hidden relative w-full`}>
         <div className="h-full bg-zinc-950/20 px-5 md:px-0 text-white overflow-hidden">
           <div className="h-full flex flex-col justify-center items-center overflow-hidden">
             <h3 className="light-font block text-lg leading-4 tracking-widest ">
@@ -47,4 +48,4 @@ const AboutBannerDetails = ({
   );
 };
 
-export default AboutBannerDetails;
+export default CoverBackground;

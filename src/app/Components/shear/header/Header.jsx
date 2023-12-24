@@ -21,16 +21,16 @@ const navbar = [
     text: "Our Menu",
   },
   {
-    link: "/reservation",
-    text: "Reservation",
-  },
-  {
     link: "/blog",
     text: "Blogs",
   },
   {
     link: "/contact",
     text: "Contact",
+  },
+  {
+    link: "/shop",
+    text: "Shop",
   },
 ];
 
