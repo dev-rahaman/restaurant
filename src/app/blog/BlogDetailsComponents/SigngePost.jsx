@@ -19,7 +19,7 @@ const SinglePost = ({ post }) => {
         </h4>
         <div className="flex justify-start items-center gap-3">
           <CiClock2 size={18} className="text-[#c59d5f]" />
-          <p className="text-[14px] text-muted text-[15px]">{date}</p>
+          <p className="text-[14px] text-muted">{date}</p>
         </div>
       </div>
     </div>

@@ -37,16 +37,23 @@ const navbar = [
 const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsScrolling(true);
-    } else {
-      setIsScrolling(false);
-    }
+    setScrollY(window.scrollY);
   };
 
-  window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    setIsScrolling(scrollY > 50);
+  }, [scrollY]);
 
   const handleMenu = () => {
     setIsOpen(true);
