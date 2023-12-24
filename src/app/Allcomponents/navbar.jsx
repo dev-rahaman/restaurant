@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
