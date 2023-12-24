@@ -1,4 +1,4 @@
-const Banner = ({
+const AboutBannerDetails = ({
   title,
   heading,
   para,
@@ -23,7 +23,7 @@ const Banner = ({
             </h1>
 
             <p
-              className="text-center text-lg"
+              className="text-center text-lg w-[500px]"
               data-aos="fade-up"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="1000"
@@ -47,4 +47,4 @@ const Banner = ({
   );
 };
 
-export default Banner;
+export default AboutBannerDetails;

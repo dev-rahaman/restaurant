@@ -1,7 +1,7 @@
+import Container from "@/app/Components/SmallComponents/Container";
 import Link from "next/link";
-import Container from "./Container";
 
-const Banner = () => {
+const BlogBanner = () => {
   return (
     <section
       className="bg-cover bg-center w-full"
@@ -24,4 +24,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BlogBanner;

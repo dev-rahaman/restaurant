@@ -2,7 +2,7 @@
 import AOS from "aos";
 import React, { useEffect } from "react";
 
-const ReservationDetail = () => {
+const ReservationDetails = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -16,8 +16,7 @@ const ReservationDetail = () => {
         data-aos-duration="1000"
       >
         <h1 className="text-[#ca9c5e] md:text-[34px] text-[26px] mt-10 md:mt-0 font-bold mb-7 md:mb-14">
-          &quot;Until I discovered cooking I was never really interested in
-          anything&quot;
+          Until I discovered cooking I was never really interested in anything
         </h1>
         <div className="flex md:flex-row flex-col justify-between gap-5">
           <div className="md:w-1/2">
@@ -80,4 +79,4 @@ const ReservationDetail = () => {
   );
 };
 
-export default ReservationDetail;
+export default ReservationDetails;

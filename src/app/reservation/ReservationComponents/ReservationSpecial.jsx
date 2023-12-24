@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect } from "react";
-
 import Aos from "aos";
+import { useEffect } from "react";
+
 const ReservationSpecial = () => {
   useEffect(() => {
     Aos.init();

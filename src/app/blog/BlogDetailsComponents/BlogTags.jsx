@@ -1,6 +1,6 @@
 const tags = ["daily", "desserts", "drinks", "food", "main", "recipes", "tips"];
 
-const Tags = () => {
+const BlogTags = () => {
   return (
     <section className="mt-10 w-full p-[30px] bg-lightBg">
       <div className="relative">
@@ -22,4 +22,4 @@ const Tags = () => {
   );
 };
 
-export default Tags;
+export default BlogTags;

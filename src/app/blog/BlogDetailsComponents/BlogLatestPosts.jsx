@@ -1,4 +1,4 @@
-import SinglePost from "./SigngePost";
+import { CiClock2 } from "react-icons/ci";
 
 const posts = [
   {
@@ -21,7 +21,7 @@ const posts = [
   },
 ];
 
-const LatestPosts = () => {
+const BlogLatestPosts = () => {
   return (
     <section>
       <div className="relative">
@@ -31,12 +31,32 @@ const LatestPosts = () => {
         <div className="bottom before:w-[70px] before:border-[1.5px] before:top-3"></div>
       </div>
       <section className="mt-10 flex flex-col justify-start items-start gap-3">
-        {posts?.map((post, index) => (
-          <SinglePost key={index} post={post} />
+        {posts?.map((post, idx) => (
+          <div
+            key={idx}
+            className={`flex justify-between gap-4 pb-3 ${
+              post?.border ? "border-b border-[#ffffff1a]" : ""
+            }`}
+          >
+            <img
+              src={post?.img}
+              alt="firstPost"
+              className="h-20 w-20 object-cover object-center"
+            />
+            <div className="text-white">
+              <h4 className="text-[16px] font-[600] mb-[5px] hover:text-[#c59d5f] cursor-pointer duration-300">
+                {post?.title}
+              </h4>
+              <div className="flex justify-start items-center gap-3">
+                <CiClock2 size={18} className="text-[#c59d5f]" />
+                <p className="text-[14px] text-muted">{post?.date}</p>
+              </div>
+            </div>
+          </div>
         ))}
       </section>
     </section>
   );
 };
 
-export default LatestPosts;
+export default BlogLatestPosts;

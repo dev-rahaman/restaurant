@@ -1,25 +1,23 @@
-import About from "../blog/BlogDetailsComponents/About";
-import Container from "../blog/BlogDetailsComponents/Container";
-import FooterTop from "../blog/BlogDetailsComponents/FooterTop";
-import LatestPosts from "../blog/BlogDetailsComponents/LatestPosts";
-import OurServices from "../blog/BlogDetailsComponents/OurServices";
-import QuickLinks from "../blog/BlogDetailsComponents/QuickLinks";
+import Container from "@/app/components/SmallComponents/Container";
+import OurServices from "@/app/Components/shear/footer/FooterComponents/FooterOurServices";
+import QuickLinks from "@/app/Components/shear/footer/FooterComponents/FooterQuickLinks";
+import FooterTop from "@/app/Components/shear/footer/FooterComponents/FooterTop";
+import FooterAbout from "@/app/Components/shear/footer/FooterComponents/FooterAbout";
+import FooterLatestPosts from "@/app/Components/shear/footer/FooterComponents/FooterLatestPosts";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <>
       <section className="bg-lightBg ">
         <Container>
           <section className="bg-cover w-full py-20 footer">
-            {/* Footer Top section */}
             <FooterTop />
-            {/* Footer main section */}
             <section className="mt-16">
               <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_2fr_2fr_3fr] gap-5 md:gap-10">
-                <About />
+                <FooterAbout />
                 <OurServices />
                 <QuickLinks />
-                <LatestPosts />
+                <FooterLatestPosts />
               </section>
             </section>
           </section>
@@ -34,6 +32,4 @@ const Footer = () => {
       </section>
     </>
   );
-};
-
-export default Footer;
+}

@@ -2,14 +2,14 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 
-const ReservationShowCase = () => {
+const ShowCase = () => {
   useEffect(() => {
     Aos.init();
   }, []);
 
   return (
     <div className="w-full">
-      <div className="text-white text-center md:my-24 my-14 px-5 md:px-0">
+      <div className="text-white  text-center md:my-24 my-14 px-5 md:px-0">
         <h2
           data-aos="fade-up"
           data-aos-easing="ease-out-cubic"
@@ -55,32 +55,26 @@ const ReservationShowCase = () => {
       >
         <img
           src={"/archive-img-1.jpg"}
-          alt=""
           className="h-[345px] rounded-md w-full md:col-span-3"
         />
         <img
-          src={"archive-img-2.jpg"}
-          alt=""
+          src={"/archive-img-2.jpg"}
           className="h-[345px] rounded-md w-full md:col-span-4"
         />
         <img
           src={"/archive-img-3.jpg"}
-          alt=""
           className="h-[345px] rounded-md w-full md:col-span-2"
         />
         <img
           src={"/archive-img-4.jpg"}
-          alt=""
           className="h-[345px] rounded-md w-full md:col-span-4"
         />
         <img
           src={"/archive-img-5.jpg"}
-          alt=""
           className="h-[345px] rounded-md w-full md:col-span-2"
         />
         <img
           src={"/archive-img-6.jpg"}
-          alt=""
           className="h-[345px] rounded-md w-full md:col-span-3"
         />
       </div>
@@ -88,4 +82,4 @@ const ReservationShowCase = () => {
   );
 };
 
-export default ReservationShowCase;
+export default ShowCase;

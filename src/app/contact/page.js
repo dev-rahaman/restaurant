@@ -1,4 +1,3 @@
-import ReservationShowCase from "../reservation/ReservationComponents/ReservationShowCase";
 import ContactBanner from "./ContactComponents/ContactBanner";
 import ContactDetails from "./ContactComponents/ContactDetails";
 import ContactForm from "./ContactComponents/ContactForm";
@@ -11,7 +10,6 @@ const Contact = () => {
       <ContactDetails />
       <ContactMapLocation />
       <ContactForm />
-      <ReservationShowCase />
     </div>
   );
 };

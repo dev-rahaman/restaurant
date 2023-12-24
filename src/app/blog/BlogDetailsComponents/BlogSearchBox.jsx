@@ -1,6 +1,6 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const SearchBox = () => {
+const BlogSearchBox = () => {
   return (
     <section className="w-full bg-lightBg md:p-[30px] rounded-none relative">
       <div className="relative">
@@ -17,4 +17,4 @@ const SearchBox = () => {
   );
 };
 
-export default SearchBox;
+export default BlogSearchBox;

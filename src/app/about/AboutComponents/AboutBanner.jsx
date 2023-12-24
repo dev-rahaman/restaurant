@@ -1,9 +1,9 @@
-import Banner from "@/app/Allcomponents/Banner";
+import AboutBannerDetails from "./AboutBannerDetails";
 
 const AboutBanner = () => {
   return (
     <>
-      <Banner
+      <AboutBannerDetails
         title={"MORE FLAVOR FOR LESS"}
         heading={"About"}
         para={

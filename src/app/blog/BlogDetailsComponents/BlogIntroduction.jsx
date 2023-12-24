@@ -1,10 +1,10 @@
-import Heading from "./Heading";
-import MessageBox from "./MessageBox";
+import BlogHeading from "./BlogHeading";
+import BlogMessageBox from "./BlogMessageBox";
 
-const Introduction = () => {
+const BlogIntroduction = () => {
   return (
     <section className="text-white">
-      <Heading />
+      <BlogHeading />
       <section className="mt-10 space-y-6">
         <img
           src={"/image-1.jpg"}
@@ -102,9 +102,9 @@ const Introduction = () => {
           </section>
         </section>
       </section>
-      <MessageBox />
+      <BlogMessageBox />
     </section>
   );
 };
 
-export default Introduction;
+export default BlogIntroduction;

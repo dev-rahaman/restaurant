@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BsFolder2 } from "react-icons/bs";
 import { CiClock2 } from "react-icons/ci";
 
-const Heading = () => {
+const BlogHeading = () => {
   return (
     <section className="text-white">
       <h1 className="text-[50px] leading-[59px] font-bold font-Themify mb-4">
@@ -37,4 +37,4 @@ const Heading = () => {
   );
 };
 
-export default Heading;
+export default BlogHeading;

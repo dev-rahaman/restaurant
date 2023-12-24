@@ -8,7 +8,7 @@ const ReservationAbout = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden about-container mt-24 md:relative ">
+    <div className="about-container mt-24 md:relative ">
       <div className="bg-zinc-950/30 w-full h-full px-5 flex justify-center items-center">
         <div className="md:max-w-6xl w-full mx-auto text-white ">
           <div className="md:w-[500px] w-full">
@@ -51,10 +51,10 @@ const ReservationAbout = () => {
         </div>
       </div>
       <div className="absolute  -bottom-52 -right-5 md:block hidden">
-        <img src={"/right-corner-img.png"} alt="" className="w-[400px]" />
+        <img src={"/right-corner-img.png"} alt="" className="w-[300px]" />
       </div>
       <div className="absolute  -bottom-[430px] -left-[200px] md:block hidden">
-        <img src={"/left-corner-leap.png"} alt="" className="w-[300px]" />
+        <img src={"/left-corner-leap.png"} alt="" className="w-[400px]" />
       </div>
     </div>
   );

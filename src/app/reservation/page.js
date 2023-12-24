@@ -1,21 +1,18 @@
+import React from "react";
+import ReservationCover from "./ReservationComponents/ReservationCover";
+import ReservationDetails from "./ReservationComponents/ReservationDetails";
 import ReservationBanner from "./ReservationComponents/ReservationBanner";
 import ReservationSpecial from "./ReservationComponents/ReservationSpecial";
-import ReservationShowCase from "./ReservationComponents/ReservationShowCase";
-import ReservationAbout from "./ReservationComponents/about";
-import ReservationCover from "./ReservationComponents/reservationCover";
-import ReservationDetail from "./ReservationComponents/reservationDetail";
+import ReservationAbout from "./ReservationComponents/ReservationAbout";
 
-const ReservationPage = () => {
+export default function page() {
   return (
-    <>
+    <div className="overflow-hidden">
       <ReservationCover />
-      <ReservationDetail />
+      <ReservationDetails />
       <ReservationBanner />
       <ReservationSpecial />
       <ReservationAbout />
-      <ReservationShowCase />
-    </>
+    </div>
   );
-};
-
-export default ReservationPage;
+}

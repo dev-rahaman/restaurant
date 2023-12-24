@@ -1,4 +1,4 @@
-import { Button } from "@/app/Allcomponents/Button";
+import { Button } from "@/app/Components/SmallComponents/Button";
 
 const InputText = ({ text }) => {
   return (
@@ -12,7 +12,7 @@ const InputText = ({ text }) => {
   );
 };
 
-const MessageBox = () => {
+const BlogMessageBox = () => {
   return (
     <section className="mt-10">
       <section className="px-10 pt-[30px] pb-12 bg-darkBg">
@@ -46,4 +46,4 @@ const MessageBox = () => {
   );
 };
 
-export default MessageBox;
+export default BlogMessageBox;

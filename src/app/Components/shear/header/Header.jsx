@@ -1,11 +1,11 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
 import { FaInstagram, FaTripadvisor } from "react-icons/fa";
-import Image from "next/image";
-import Link from "next/link";
 
 const navbar = [
   {
@@ -25,7 +25,7 @@ const navbar = [
     text: "Reservation",
   },
   {
-    link: "/blog/details",
+    link: "/blog",
     text: "Blogs",
   },
   {
@@ -34,7 +34,7 @@ const navbar = [
   },
 ];
 
-const Navbar = () => {
+export default function Header() {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -129,6 +129,4 @@ const Navbar = () => {
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}

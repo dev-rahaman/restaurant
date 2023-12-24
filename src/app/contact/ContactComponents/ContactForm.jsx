@@ -1,4 +1,4 @@
-import { Button } from "@/app/Allcomponents/Button";
+import { Button } from "@/app/Components/SmallComponents/Button";
 
 export const InputText = ({ labelName }) => {
   return (
