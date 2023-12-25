@@ -1,9 +1,9 @@
-import Container from "@/app/components/SmallComponents/Container";
 import OurServices from "@/app/Components/shear/footer/FooterComponents/FooterOurServices";
 import QuickLinks from "@/app/Components/shear/footer/FooterComponents/FooterQuickLinks";
 import FooterTop from "@/app/Components/shear/footer/FooterComponents/FooterTop";
 import FooterAbout from "@/app/Components/shear/footer/FooterComponents/FooterAbout";
 import FooterLatestPosts from "@/app/Components/shear/footer/FooterComponents/FooterLatestPosts";
+import Container from "../../SmallComponents/Container";
 
 export default function Footer() {
   return (
