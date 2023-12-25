@@ -2,7 +2,7 @@ export const Center = ({ heading, para }) => {
   return (
     <div className="flex items-center justify-center flex-col text-center">
       <div
-        className="py-20 lg:w-[700px]"
+        className="py-20 lg:w-[600px]"
         data-aos="fade-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
